@@ -56,7 +56,7 @@ describe("PostCard Component", () => {
 	});
 
 	test("it shows a not found error message", async ()=> {
-		// Mock the 500 response
+		// Mock the 404 response
 		server.use(
 			rest.get('https://jsonplaceholder.typicode.com/posts/1', (req, res, ctx) => {
 				return res(ctx.status(404));
