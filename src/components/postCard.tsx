@@ -54,9 +54,9 @@ const PostCard: React.FC = () => {
 
 	React.useEffect(() => {
 		loadPost()
-			.finally(() => {
-				setLoading(false)
-			});
+      .finally(() => {
+        setLoading(false)
+      });
 	}, [])
 
 	return (
