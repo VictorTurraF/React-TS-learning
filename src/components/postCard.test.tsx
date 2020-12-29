@@ -1,4 +1,3 @@
-// @ts-ignore
 import {rest} from 'msw';
 import { setupServer } from 'msw/node'
 import {cleanup, render, screen, waitFor} from '@testing-library/react';
