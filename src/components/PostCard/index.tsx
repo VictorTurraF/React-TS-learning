@@ -6,8 +6,8 @@ import {
 	CardHeader,
 	CircularProgress,
 } from "@material-ui/core";
-import Alert, {AlertProps} from '@material-ui/lab/Alert';
-import {client} from "../api/client";
+import Alert, { AlertProps } from '@material-ui/lab/Alert';
+import { client } from "../../api/client";
 
 type Feedback = Required<Pick<AlertProps, "severity">> & {
 	message: string
@@ -23,7 +23,30 @@ const PostCard: React.FC = () => {
 	const [loading, setLoading] = React.useState<boolean>(true);
 	const [feedback, setFeedback] = React.useState<Feedback>();
 
-	const loadPost = async () => {
+  const handleResponseError = (status: number) => {
+    switch ( status ) {
+      case 500:
+        setFeedback({
+          severity: "error",
+          message: "Erro interno",
+        });
+        break;
+      case 404:
+        setFeedback({
+          severity: "warning",
+          message: "O post informado não foi encontrado",
+        });
+        break;
+      default:
+        setFeedback({
+          severity: "error",
+          message: "Erro Inesperado",
+        });
+        break;
+    }
+  }
+
+	const loadPost = React.useCallback( async () => {
 		try {
 			const {data: post} = await client.get<Post>('/posts/1');
 			setPost(post);
@@ -34,30 +57,17 @@ const PostCard: React.FC = () => {
 		}catch (error) {
 			if(error.request){
 				const { status } = error.request;
-				switch ( status ) {
-					case 500:
-						setFeedback({
-							severity: "error",
-							message: "Erro interno",
-						});
-						break;
-					case 404:
-						setFeedback({
-							severity: "warning",
-							message: "O post informado não foi encontrado",
-						});
-						break;
-				}
+        handleResponseError( status );
 			}
 		}
-	}
+	}, []);
 
 	React.useEffect(() => {
 		loadPost()
       .finally(() => {
         setLoading(false)
       });
-	}, [])
+	}, [loadPost])
 
 	return (
 		<>
@@ -66,17 +76,20 @@ const PostCard: React.FC = () => {
 					<Alert severity={feedback.severity}>
 						{feedback.message}
 					</Alert>
-                </Box>
+        </Box>
 			}
 			{ loading && <CircularProgress color="inherit" /> }
-			{ !loading &&
-				<Card variant="outlined">
-					<CardHeader title={post?.title}/>
-					<CardContent>{post?.body}</CardContent>
-				</Card>
+			{ !loading && feedback?.severity === 'success' &&
+        <>
+          <h1>Seu post</h1>
+          <Card variant="outlined">
+            <CardHeader title={post?.title}/>
+            <CardContent>{post?.body}</CardContent>
+          </Card>
+        </>
 			}
 		</>
 	);
 };
 
-export { PostCard };
+export default PostCard;

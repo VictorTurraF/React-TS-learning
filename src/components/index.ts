@@ -1,4 +1,3 @@
-import {PostCard} from './postCard';
-import {CustomButton} from './customButton';
+import PostCard from './PostCard';
 
-export { PostCard, CustomButton };
+export { PostCard };

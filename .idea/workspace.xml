@@ -2,7 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4e19959-1bce-4e6c-8ee1-4d9b82bdc1ae" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/postCard.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/postCard.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/PostCard/mocks/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/PostCard/tests/integration/postCard.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/PostCard/tests/unit/postCard.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/contracts/abstracts/MockedServer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mocks/browser.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mocks/handlers.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mocks/server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/client.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/client.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/customButton.test.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/customButton.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/postCard.test.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/postCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PostCard/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/setupTests.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/setupTests.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +30,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -30,6 +48,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="CONST" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/mocks" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -45,22 +64,41 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\VICTO\WebstormProjects\webstorm-test\src\mocks" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\VICTO\WebstormProjects\webstorm-test\src\components\PostCard\tests\integration" />
+      <recent name="C:\Users\VICTO\WebstormProjects\webstorm-test\src\components\PostCard" />
+      <recent name="C:\Users\VICTO\WebstormProjects\webstorm-test\src\components\CustomButton" />
       <recent name="C:\Users\VICTO\WebstormProjects\webstorm-test\src\components" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.Button component.it shows the expected text when clicked (testing the wrong way!)">
-    <configuration name="Button component.it shows the expected text when clicked (testing the wrong way!)" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="npm.npm start">
+    <configuration name="Button component.it shows the expected text when clicked (testing the wrong way!) (1)" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/components/customButton.test.tsx" />
+      <test-file value="$PROJECT_DIR$/src/components/CustomButton/customButton.test.tsx" />
       <test-names>
         <test-name value="Button component" />
         <test-name value="it shows the expected text when clicked (testing the wrong way!)" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="PostCard Component (1)" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/components/PostCard/tests/integration/postCard.test.tsx" />
+      <test-names>
+        <test-name value="PostCard Component" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -71,51 +109,37 @@
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/src/components/postCard.test.tsx" />
+      <test-file value="$PROJECT_DIR$/src/components/PostCard/postCard.test.tsx" />
       <test-names>
         <test-name value="PostCard Component" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="PostCard Component.it shows the internal server error message" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="PostCard Component.it fetches the post and show a success message" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/components/postCard.test.tsx" />
+      <test-file value="$PROJECT_DIR$/src/components/PostCard/postCard.test.tsx" />
       <test-names>
         <test-name value="PostCard Component" />
-        <test-name value="it shows the internal server error message" />
+        <test-name value="it fetches the post and show a success message" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="PostCard Component.it shows the internal server friendly error message" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="PostCard Component.it shows a not found error message" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/components/postCard.test.tsx" />
+      <test-file value="$PROJECT_DIR$/src/components/PostCard/postCard.test.tsx" />
       <test-names>
         <test-name value="PostCard Component" />
-        <test-name value="it shows the internal server friendly error message" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="Suite teste.True should be true" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/postCard.test.ts" />
-      <test-names>
-        <test-name value="Suite teste" />
-        <test-name value="True should be true" />
+        <test-name value="it shows a not found error message" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -134,11 +158,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.Button component.it shows the expected text when clicked (testing the wrong way!)" />
+        <item itemvalue="Jest.PostCard Component (1)" />
         <item itemvalue="Jest.PostCard Component" />
-        <item itemvalue="Jest.PostCard Component.it shows the internal server error message" />
-        <item itemvalue="Jest.PostCard Component.it shows the internal server friendly error message" />
-        <item itemvalue="Jest.Suite teste.True should be true" />
+        <item itemvalue="Jest.PostCard Component.it shows a not found error message" />
+        <item itemvalue="Jest.PostCard Component.it fetches the post and show a success message" />
+        <item itemvalue="Jest.Button component.it shows the expected text when clicked (testing the wrong way!) (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -154,7 +178,9 @@
       <workItem from="1607869444774" duration="690000" />
       <workItem from="1609089958183" duration="2873000" />
       <workItem from="1609116480535" duration="9992000" />
-      <workItem from="1609206200443" duration="10483000" />
+      <workItem from="1609206200443" duration="10591000" />
+      <workItem from="1609427259943" duration="20553000" />
+      <workItem from="1609537274386" duration="3813000" />
     </task>
     <servers />
   </component>
