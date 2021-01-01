@@ -2,24 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4e19959-1bce-4e6c-8ee1-4d9b82bdc1ae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/PostCard/mocks/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/PostCard/tests/integration/postCard.test.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/PostCard/tests/unit/postCard.test.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/contracts/abstracts/MockedServer.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mocks/browser.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mocks/handlers.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mocks/server.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/client.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/client.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/customButton.test.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/customButton.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/postCard.test.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/postCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PostCard/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupTests.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/setupTests.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +163,7 @@
       <workItem from="1609116480535" duration="9992000" />
       <workItem from="1609206200443" duration="10591000" />
       <workItem from="1609427259943" duration="20553000" />
-      <workItem from="1609537274386" duration="3813000" />
+      <workItem from="1609537274386" duration="4194000" />
     </task>
     <servers />
   </component>
