@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { PostCard } from 'components';
-import { render, screen } from "@testing-library/react";
+import { render, screen } from '@testing-library/react';
 
 describe('PostCard Component', () => {
   describe('When the component rendering', () => {

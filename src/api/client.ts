@@ -1,13 +1,13 @@
 import axios, { AxiosInstance, AxiosRequestConfig } from 'axios';
-import { config } from './config';
+import config from './config';
 
 export class Api {
-	public instance: AxiosInstance;
+  public instance: AxiosInstance;
 
-	public constructor(config: AxiosRequestConfig) {
-		this.instance = axios.create(config);
-	}
+  public constructor(instanceConfig: AxiosRequestConfig) {
+    this.instance = axios.create(instanceConfig);
+  }
 }
 
 const client = new Api(config).instance;
-export { client };
+export default client;
