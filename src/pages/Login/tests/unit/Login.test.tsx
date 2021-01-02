@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { render, screen } from '@testing-library/react';
-import Login from '..';
+import Login from '../..';
 
 describe('Login component unit test', () => {
   describe('should render the component correctly', () => {
